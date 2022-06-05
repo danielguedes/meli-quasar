@@ -1,0 +1,122 @@
+openapi: "3.0.1"
+info:
+  title: "meli-topsecret-API"
+  description: "Created by AWS Lambda"
+  version: "2022-06-04 20:31:14UTC"
+servers:
+  - url: "https://9sdcs693r1.execute-api.us-east-1.amazonaws.com/{basePath}"
+    variables:
+      basePath:
+        default: "v1"
+paths:
+  /$default:
+    x-amazon-apigateway-any-method:
+      isDefaultRoute: true
+      x-amazon-apigateway-integration:
+        payloadFormatVersion: "2.0"
+        type: "aws_proxy"
+        httpMethod: "POST"
+        uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:174338155576:function:meli-topsecret/invocations"
+        connectionType: "INTERNET"
+  /topsecret_split:
+    get:
+      responses:
+        default:
+          description: "Default response for GET /topsecret_split"
+      x-amazon-apigateway-integration:
+        payloadFormatVersion: "1.0"
+        type: "aws_proxy"
+        httpMethod: "POST"
+        uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:174338155576:function:meli-topsecret-TopsecretRetriever-xeRUnyHipcUz/invocations"
+        connectionType: "INTERNET"
+    delete:
+      responses:
+        default:
+          description: "Default response for DELETE /topsecret_split"
+      x-amazon-apigateway-integration:
+        payloadFormatVersion: "1.0"
+        type: "aws_proxy"
+        httpMethod: "POST"
+        uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:174338155576:function:meli-topsecret-TopsecretDelete-qz3Juh3Fv4zR/invocations"
+        connectionType: "INTERNET"
+  /topsecret:
+    post:
+      responses:
+        default:
+          description: "Default response for POST /topsecret"
+      x-amazon-apigateway-integration:
+        payloadFormatVersion: "1.0"
+        type: "aws_proxy"
+        httpMethod: "POST"
+        uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:174338155576:function:meli-topsecret-TopsecretDecipher-RgMbknJuGrYi/invocations"
+        connectionType: "INTERNET"
+  /topsecret_split/{satellite}:
+    post:
+      responses:
+        default:
+          description: "Default response for POST /topsecret_split/{satellite}"
+      x-amazon-apigateway-integration:
+        payloadFormatVersion: "1.0"
+        type: "aws_proxy"
+        httpMethod: "POST"
+        uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:174338155576:function:meli-topsecret-TopsecretRegister-FzWZt0rS3f1m/invocations"
+        connectionType: "INTERNET"
+    parameters:
+      - name: "satellite"
+        in: "path"
+        description: "Generated path parameter for satellite"
+        required: true
+        schema:
+          type: "string"
+components:
+  x-amazon-apigateway-integrations:
+    unusedIntegration_f4og76m:
+      payloadFormatVersion: "1.0"
+      type: "aws_proxy"
+      httpMethod: "POST"
+      uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:174338155576:function:meli-topsecret-TopsecretStatefulDecipherRetrieve-vs1fWs0ZoEEj/invocations"
+      connectionType: "INTERNET"
+    unusedIntegration_qyz31cr:
+      payloadFormatVersion: "1.0"
+      type: "aws_proxy"
+      httpMethod: "POST"
+      uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:174338155576:function:meli-topsecret-TopsecretRetriever-peUaJsrYoeIm/invocations"
+      connectionType: "INTERNET"
+    unusedIntegration_td4ihgo:
+      payloadFormatVersion: "1.0"
+      type: "aws_proxy"
+      httpMethod: "POST"
+      uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:174338155576:function:meli-topsecret-TopsecretStatelessDecipher-UZofsBNsuVvQ/invocations"
+      connectionType: "INTERNET"
+    unusedIntegration_bbwfsri:
+      payloadFormatVersion: "1.0"
+      type: "aws_proxy"
+      httpMethod: "POST"
+      uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:174338155576:function:meli-topsecret-MeliTopsecretStatelessDecipher-CUZtLotUwPGk/invocations"
+      connectionType: "INTERNET"
+    unusedIntegration_i3fllja:
+      payloadFormatVersion: "1.0"
+      type: "aws_proxy"
+      httpMethod: "POST"
+      uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:174338155576:function:meli-topsecret-TopsecretDecipher-ghEVnozaMHXT/invocations"
+      connectionType: "INTERNET"
+    unusedIntegration_3oo9ce8:
+      payloadFormatVersion: "1.0"
+      type: "aws_proxy"
+      httpMethod: "POST"
+      uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:174338155576:function:meli-topsecret-TopsecretRegister-vgAHSREzQTlN/invocations"
+      connectionType: "INTERNET"
+    unusedIntegration_81vbchp:
+      payloadFormatVersion: "1.0"
+      type: "aws_proxy"
+      httpMethod: "POST"
+      uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:174338155576:function:meli-topsecret-TopsecretStatefulDecipherRegister-MZRpqgI0NvM0/invocations"
+      connectionType: "INTERNET"
+x-amazon-apigateway-cors:
+  allowMethods:
+    - "*"
+  maxAge: 0
+  allowCredentials: false
+  allowOrigins:
+    - "*"
+x-amazon-apigateway-importexport-version: "1.0"

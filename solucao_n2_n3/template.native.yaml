@@ -1,0 +1,66 @@
+  AWSTemplateFormatVersion: '2010-09-09'
+  Transform: AWS::Serverless-2016-10-31
+  Description: AWS Serverless Quarkus - quarkus-amazon-lambda-common-deployment
+  Globals:
+    Api:
+      EndpointConfiguration: REGIONAL
+      BinaryMediaTypes:
+        - "*/*"
+
+  Resources:
+    TopsecretDecipher:
+      Type: AWS::Serverless::Function
+      Properties:
+        Handler: not.used.in.provided.runtime
+        Runtime: provided
+        CodeUri: build/function.zip
+        MemorySize: 512
+        Timeout: 15
+        Policies: arn:aws:iam::174338155576:policy/TopsecretLambdas
+        Environment:
+          Variables:
+            quarkus_lambda_handler: decipher
+            dynamodb_tablename: TopSecretReceivedMessages
+            DISABLE_SIGNAL_HANDLERS: true
+    TopsecretRegister:
+      Type: AWS::Serverless::Function
+      Properties:
+        Handler: not.used.in.provided.runtime
+        Runtime: provided
+        CodeUri: build/function.zip
+        MemorySize: 512
+        Timeout: 15
+        Policies: arn:aws:iam::174338155576:policy/TopsecretLambdas
+        Environment:
+          Variables:
+            quarkus_lambda_handler: register
+            dynamodb_tablename: TopSecretReceivedMessages
+            DISABLE_SIGNAL_HANDLERS: true
+    TopsecretRetriever:
+      Type: AWS::Serverless::Function
+      Properties:
+        Handler: not.used.in.provided.runtime
+        Runtime: provided
+        CodeUri: build/function.zip
+        MemorySize: 512
+        Timeout: 15
+        Policies: arn:aws:iam::174338155576:policy/TopsecretLambdas
+        Environment:
+          Variables:
+            quarkus_lambda_handler: retriever
+            dynamodb_tablename: TopSecretReceivedMessages
+            DISABLE_SIGNAL_HANDLERS: true
+    TopsecretDelete:
+      Type: AWS::Serverless::Function
+      Properties:
+        Handler: not.used.in.provided.runtime
+        Runtime: provided
+        CodeUri: build/function.zip
+        MemorySize: 512
+        Timeout: 15
+        Policies: arn:aws:iam::174338155576:policy/TopsecretLambdas
+        Environment:
+          Variables:
+            quarkus_lambda_handler: delete
+            dynamodb_tablename: TopSecretReceivedMessages
+            DISABLE_SIGNAL_HANDLERS: true

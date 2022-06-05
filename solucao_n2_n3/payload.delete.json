@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "headers": {
+    "Content-Length": "0",
+    "Content-Type": "application/json",
+    "Host": "9sdcs693r1.execute-api.us-east-1.amazonaws.com",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36",
+    "X-Amz-Cf-Id": "836TFLsL9VKmNXKbBtI3PVx-3KGZAQyo_6KlVieq70QDGwdQz2UUUg==",
+    "X-Amzn-Trace-Id": "Root=1-629cb4cf-6faf65b65c0f29eb2a1c5974",
+    "X-Forwarded-For": "177.130.7.28, 15.158.37.7",
+    "X-Forwarded-Port": "443",
+    "X-Forwarded-Proto": "https",
+    "cache-control": "no-cache",
+    "origin": "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop",
+    "via": "2.0 5985d8116780186e3289a0963b5145b4.cloudfront.net (CloudFront)"
+  },
+  "isBase64Encoded": false,
+  "requestContext": {
+    "accountId": "174338155576",
+    "stage": "v1",
+    "apiId": "9sdcs693r1",
+    "domainName": "9sdcs693r1.execute-api.us-east-1.amazonaws.com",
+    "domainPrefix": "9sdcs693r1",
+    "timeEpoch": 0,
+    "requestId": "TQEwgjPMoAMEP5g="
+  }
+}

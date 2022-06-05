@@ -1,0 +1,28 @@
+{
+  "version": "1.0",
+  "headers": {
+    "Content-Length": "323",
+    "Content-Type": "application/json",
+    "Host": "9sdcs693r1.execute-api.us-east-1.amazonaws.com",
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36",
+    "X-Amz-Cf-Id": "cP-WGug5fqOo02QBQrAXJuZoh22-zrODD1aoffgK-7AguJezqQ639A==",
+    "X-Amzn-Trace-Id": "Root=1-629cb39a-55e1f2963b9f85fa7886bcb6",
+    "X-Forwarded-For": "177.130.7.28, 15.158.37.7",
+    "X-Forwarded-Port": "443",
+    "X-Forwarded-Proto": "https",
+    "cache-control": "no-cache",
+    "origin": "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop",
+    "via": "2.0 5985d8116780186e3289a0963b5145b4.cloudfront.net (CloudFront)"
+  },
+  "body": "{\n\t\"satellites\": [\n\t\t{\n\t\t\t\"name\": \"kenobi\",\n\t\t\t\"distance\": 80.01,\n\t\t\t\"message\": [\"\", \"\", \"es\", \"un\", \"mensaje\"]\n\t\t},\n\t\t{\n\t\t\t\"name\": \"skywalker\",\n\t\t\t\"distance\": 80.01,\n\t\t\t\"message\": [\"este\", \"es\", \"\", \"mensaje\"]\n\t\t},\n\t\t{\n\t\t\t\"name\": \"sato\",\n\t\t\t\"distance\": 80.01,\n\t\t\t\"message\": [\"\", \"\", \"este\", \"es\", \"un\", \"mensaje\"]\n\t\t}\n\t]\n}",
+  "isBase64Encoded": false,
+  "requestContext": {
+    "accountId": "174338155576",
+    "stage": "v1",
+    "apiId": "9sdcs693r1",
+    "domainName": "9sdcs693r1.execute-api.us-east-1.amazonaws.com",
+    "domainPrefix": "9sdcs693r1",
+    "timeEpoch": 0,
+    "requestId": "TQEAHgamoAMEPKw="
+  }
+}

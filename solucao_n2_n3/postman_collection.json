@@ -1,0 +1,151 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Meli",
+		"_postman_id": "23a4ccb1-f5bd-215d-2d47-0f96ed078825",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST TopSecret (Decipher)",
+			"request": {
+				"url": "https://meli.devsecoops.io/v1/topsecret",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"satellites\": [\n\t\t{\n\t\t\t\"name\": \"kenobi\",\n\t\t\t\"distance\": 80.01,\n\t\t\t\"message\": [\"\", \"\", \"es\", \"un\", \"mensaje\"]\n\t\t},\n\t\t{\n\t\t\t\"name\": \"skywalker\",\n\t\t\t\"distance\": 80.01,\n\t\t\t\"message\": [\"este\", \"es\", \"\", \"mensaje\"]\n\t\t},\n\t\t{\n\t\t\t\"name\": \"sato\",\n\t\t\t\"distance\": 80.01,\n\t\t\t\"message\": [\"\", \"\", \"este\", \"es\", \"un\", \"mensaje\"]\n\t\t}\n\t]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST TopSecret Split (Register) KENOBI",
+			"request": {
+				"url": "https://meli.devsecoops.io/v1/topsecret_split/kenobi",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"distance\": 92.83,\n\t\"message\": [\"\", \"\", \"\", \"\", \"mensaje\"]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST TopSecret Split (Register) SKYWALKER",
+			"request": {
+				"url": "https://meli.devsecoops.io/v1/topsecret_split/skywalker",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"distance\": 92.83,\n\t\"message\": [\"\", \"\", \"una\", \"\"]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST TopSecret Split (Register) SATO",
+			"request": {
+				"url": "https://meli.devsecoops.io/v1/topsecret_split/sato",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"distance\": 92.83,\n\t\"message\": [\"\", \"\", \"\", \"esta\", \"es\", \"\", \"mensaje\"]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST TopSecret Split (Register) OBI-WAN",
+			"request": {
+				"url": "https://meli.devsecoops.io/v1/topsecret_split/obi-wan",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"distance\": 92.83,\n\t\"message\": [\"\", \"\", \"\", \"esta\", \"es\", \"\", \"mensaje\"]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET TopSecret Split (Retriever)",
+			"request": {
+				"url": "https://meli.devsecoops.io/v1/topsecret_split",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"satellites\": [\n\t\t{\n\t\t\t\"name\": \"kenobi\",\n\t\t\t\"distance\": 80.01,\n\t\t\t\"message\": [\"\", \"\", \"es\", \"un\", \"mensaje\"]\n\t\t},\n\t\t{\n\t\t\t\"name\": \"skywalker\",\n\t\t\t\"distance\": 80.01,\n\t\t\t\"message\": [\"este\", \"es\", \"\", \"mensaje\"]\n\t\t},\n\t\t{\n\t\t\t\"name\": \"sato\",\n\t\t\t\"distance\": 80.01,\n\t\t\t\"message\": [\"\", \"\", \"este\", \"es\", \"un\", \"mensaje\"]\n\t\t}\n\t]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE TopSecret Split (Delete)",
+			"request": {
+				"url": "https://meli.devsecoops.io/v1/topsecret_split",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
