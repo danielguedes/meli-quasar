@@ -56,13 +56,13 @@ Uma solução melhor seria adicionar um identificador às mensagens recebidas pe
 ### API Gateway
 
 Endpoints
-|  Method   | Endpoint                 |
-|------|-------------------------------|
-| POST | /topsecret                    |
-| GET  | /topsecret_split              |
-| POST | /topsecret_split/{satellite}  |
+|  Method   | Endpoint                 | Função            |
+|------|-------------------------------|-------------------|
+| POST | /topsecret                    | DecipherFunction  |
+| GET  | /topsecret_split              | RetrieverFunction |
+| POST | /topsecret_split/{satellite}  | RegisterFunction  |
 
-[Link] para especificação OpenAPI.
+[Especificação OpenAPI](openapi.yaml).
 
 ## Arquitetura da Aplicação (Lambda Functions)
 
