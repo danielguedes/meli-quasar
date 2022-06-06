@@ -29,7 +29,7 @@ Arquitetura cloud-native serverless com banco de dados NoSQL baseado em chave-va
 
 ### Funções Serverless Lambda
 
-A solução é composta por dois conjuntos de funções Lambda. A função stateless implementa o N2 do desafio. As funções stateful implementam o N3 do desafio. 
+A solução é composta por dois conjuntos de funções Lambda. A função _Stateless_ implementa o N2 do desafio. As funções _Stateful_ implementam o N3 do desafio. 
 
 **Stateless**
 * DecipherFunction
@@ -41,7 +41,7 @@ A solução é composta por dois conjuntos de funções Lambda. A função state
 
 Para decifrar novas mensagens transmitidas, é necessário remover o estado da aplicação, e por isso foi incluída a DeleteFunction, embora não fosse solicitado no desafio.
 
-Uma solução melhor seria adicionar um identificador as mensagens recebidas pelos satélite (data/hora da transmissão, por exemplo) de forma que as mensagens recebidas por cada satélites possam ser agrupadas.
+Uma solução melhor seria adicionar um identificador às mensagens recebidas pelos satélite (data/hora da transmissão, por exemplo) de forma que as mensagens recebidas por cada satélite possam ser agrupadas.
 
 ### DynamoDB
 
@@ -56,9 +56,11 @@ Uma solução melhor seria adicionar um identificador as mensagens recebidas pel
 ### API Gateway
 
 Endpoints
-* POST /topsecret
-* GET /topsecret_split
-* POST /topsecret_split/{satellite}
+|  Method   | Endpoint                 |
+|------|-------------------------------|
+| POST | /topsecret                    |
+| GET  | /topsecret_split              |
+| POST | /topsecret_split/{satellite}  |
 
 [Link] para especificação OpenAPI.
 
