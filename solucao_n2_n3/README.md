@@ -68,7 +68,7 @@ Endpoints
 
 #### Conceitos Empregados
 
-* Arquitetura Exagonal
+* Arquitetura Hexagonal
 * Serverless
 * SOLID
 
@@ -90,9 +90,9 @@ Endpoints
 * Lombock
 * JUnit
 
-### Arquitetura Exagonal
+### Arquitetura Hexagonal
 
-A arquitetura exagonal tem por objetivo facilitar a evolução das lógica de negócio isolando o domínio de negócio das implementações técnicas, de forma que o serviço não dependa de como ele é exposto ou como os dados são persistidos, por exemplo.
+A arquitetura hexagonal tem por objetivo facilitar a evolução das lógica de negócio isolando o domínio de negócio das implementações técnicas, de forma que o serviço não dependa de como ele é exposto ou como os dados são persistidos, por exemplo.
 
 #### Principais conceitos
 * **Aplicação**: é o _core_ do sistema, contém serviços que orquestram as funcionalidades e manipulam as entidades. A Aplicação recebe comandos pelas Portas e envia solicitações a outros atores também através das Portas.
