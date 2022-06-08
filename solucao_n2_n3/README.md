@@ -96,13 +96,12 @@ A arquitetura hexagonal tem por objetivo facilitar a evolução das lógica de n
 
 #### Principais conceitos
 * **Aplicação**: é o _core_ do sistema, contém serviços que orquestram as funcionalidades e manipulam as entidades. A Aplicação recebe comandos pelas Portas e envia solicitações a outros atores também através das Portas.
-* **Portas**: interfaces de entrada e saída que definem o contrato de interação da aplicação com os adaptadores.
-* **Adaptadores**: implementam as interfaces definidas pelas Portas e interagem com o mundo externo recebendo comandos, nas Portas de entrada, e enviando ou consultando dados nas Portas de saída.
+* **Portas**: interfaces de entrada e saída que definem o contrato de interação da aplicação com o mundo externo.
+* **Adaptadores**: implementam as interfaces definidas pelas Portas e interagem com o mundo externo recebendo comandos e consultas nas Portas de entrada e enviando ou consultando dados nas Portas de saída.
 
 #### Portas de entrada
 * StatelessDecipherPort
 * StatefulDecipherPort
-* DeleteMessagesPort
 
 #### Portas de saída
 * MessageRepositoryPort
@@ -110,11 +109,11 @@ A arquitetura hexagonal tem por objetivo facilitar a evolução das lógica de n
 
 #### Adaptadores
 
-| Nome       | Tipo   | Porta                                               |
-|------------|--------|-----------------------------------------------------|
-| Lambda     | Input  | Utiliza StatelessDecipherPort, StatefulDecipherPort |
-| DynamoDB   | Ouput  | Implementa MessageRepositoryPort                    |
-| Statellite | Output | Implementa SatelliteRepositoryPort                  | 
+| Nome       | Tipo   | Porta                                                  |
+|------------|--------|--------------------------------------------------------|
+| Lambda     | Input  | Implementa StatelessDecipherPort, StatefulDecipherPort |
+| DynamoDB   | Ouput  | Implementa MessageRepositoryPort                       |
+| Statellite | Output | Implementa SatelliteRepositoryPort                     | 
 
 
 ## Estrutura de Java Packages 
