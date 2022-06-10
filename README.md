@@ -1,6 +1,6 @@
 # Desafio Fogo de Quasar
 
-Este repositório apresenta as soluções do Desafio Fogo de Quasar do MELI que possui três níveis (N1, N2 e N3).
+Este repositório apresenta as soluções do Desafio Fogo de Quasar que possui três níveis (N1, N2 e N3).
 
 As soluções estão separadas em dois diretórios:
 
